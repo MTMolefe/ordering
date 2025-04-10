@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MT Molefe clothing</title>
+    <link rel="stylesheet" href="styles.css">
+	<style>
+    body {
+      background-image: url('C:/Users/Tlotlo/OneDrive/Desktop/my work application files/my github project/mtm.jpg'); 
+      background-repeat: no-repeat; 
+      background-position: center; 
+      background-size: cover; 
+    }
+  </style>
+
+	
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to MT Molefe clothing</h1>
+
+        <div class="products">
+            <div class="product">
+                <img src=tshirt.jpg alt="MT Molefe T-shirt">
+                <p>MT Molefe designed exclusive T-shirt</p>
+                <p>R500</p>
+                <button onclick="addToCart('MT Molefe T-shirt', 500)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src=jeans.jpg alt="MT Molefe Jeans">
+                <p>MT Molefe designed super rare Jeans</p>
+                <p>R1500</p>
+                <button onclick="addToCart('MT Molefe Jeans', 1500)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src=hoodie.jpg alt="MT Molefe hoodie">
+                <p>MT Molefe designed Hoodie</p>
+                <p>R1300</p>
+                <button onclick="addToCart('MT Molefe hoodie', 1300)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will appear here -->
+            </ul>
+            <p>Total: <span id="total">0</span></p>
+            <button onclick="checkout()">Checkout</button>
+			<button onclick="clearCart()">Clear Cart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
